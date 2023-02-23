@@ -24,6 +24,9 @@ rosdep check --from-paths src --ignore-src --rosdistro melodic
 # Install dependencies
 rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 
+#Install Hector SLAM dependency (to be inserted as dependency in rosdep)
+sudo apt install ros-noetic-hector-slam
+
 # Build
 cd <catkin_ws>/src
 catkin build
